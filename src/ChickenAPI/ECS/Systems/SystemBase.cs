@@ -8,7 +8,48 @@ namespace ChickenAPI.ECS.Systems
     {
         private Func<IEntity, bool> _filter;
 
-        protected SystemBase(IEntityManager entityManager) => EntityManager = entityManager;
+        /// <summary>
+        /// The delay in ms required for each Update call
+        /// </summary>
+        protected double _delay { get; }
+
+        protected double _lastTick { get; private set; }
+
+        public IEntityManager EntityManager { get; }
+
+        public bool IsActive { get; private set; }
+
+        /// <summary>
+        /// The delay is in ms 
+        /// </summary>
+        /// <param name="entityManager"></param>
+        /// <param name="delay"></param>
+        protected SystemBase(IEntityManager entityManager, long delay = 0)
+        {
+            _delay = delay;
+            _lastTick = DateTime.Now.Millisecond;
+            EntityManager = entityManager;
+            IsActive = true;
+        }
+
+        public void Activate()
+        {
+            if (IsActive)
+            {
+                throw new Exception("System is already activated");
+            }
+            IsActive = true;
+        }
+
+        public void Deactivate()
+        {
+            if (!IsActive)
+            {
+                throw new Exception("System is already deactivated");
+            }
+
+            IsActive = false;
+        }
 
 
         /// <summary>
@@ -19,7 +60,21 @@ namespace ChickenAPI.ECS.Systems
         /// </remarks>
         protected virtual Expression<Func<IEntity, bool>> Filter { get; }
 
-        public IEntityManager EntityManager { get; }
+        public void Update(double tick)
+        {
+            if (tick - _lastTick < _delay)
+            {
+                return;
+            }
+
+            _lastTick = tick;
+            Execute();
+        }
+
+        public virtual void Execute()
+        {
+            throw new NotImplementedException();
+        }
 
         public virtual void Execute(IEntity entity)
         {

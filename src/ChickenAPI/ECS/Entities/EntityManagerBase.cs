@@ -4,6 +4,7 @@ using System.Linq;
 using ChickenAPI.ECS.Systems;
 using ChickenAPI.Enums.Game.Entity;
 using ChickenAPI.Game.Entities.Player;
+using ChickenAPI.Game.Systems.Movable;
 using ChickenAPI.Packets;
 using ChickenAPI.Utils;
 
@@ -31,6 +32,14 @@ namespace ChickenAPI.ECS.Entities
         public void Dispose()
         {
             throw new NotImplementedException();
+        }
+
+        public void Run()
+        {
+            foreach (var system in _systems)
+            {
+                system.Update(DateTime.Now.Millisecond);
+            }
         }
 
         public IEntityManager ParentEntityManager { get; protected set; }
