@@ -1,0 +1,27 @@
+﻿using ChickenAPI.Core.DAL.TransferObjects;
+using ChickenAPI.Data.TransferObjects.NpcMonster;
+using ChickenAPI.Enums.Game.Entity;
+
+namespace ChickenAPI.Data.TransferObjects.Map
+{
+    public class MapMonsterDto : IMappedDto
+    {
+        public long Id { get; set; }
+
+        public bool IsDisabled { get; set; }
+
+        public bool IsMoving { get; set; }
+
+        public short MapId { get; set; }
+
+        public short MapX { get; set; }
+
+        public short MapY { get; set; }
+
+        public NpcMonsterDto NpcMonster { get; set; }
+
+        public long NpcMonsterId { get; set; }
+
+        public DirectionType Position { get; set; }
+    }
+}

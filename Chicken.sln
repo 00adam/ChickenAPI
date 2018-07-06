@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChickenAPI", "src\ChickenAPI\ChickenAPI.csproj", "{F4921C2F-838C-40EE-9459-0DA0B1D6D591}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChickenAPI.Game", "src\ChickenAPI.Game\ChickenAPI.Game.csproj", "{F4921C2F-838C-40EE-9459-0DA0B1D6D591}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChickenAPI.Test", "test\ChickenAPI.Test\ChickenAPI.Test.csproj", "{693CED9C-C47E-49BC-9635-C3AED941DE24}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChickenAPI.PacketGeneratorCLI", "src\ChickenAPI.PacketGeneratorCLI\ChickenAPI.PacketGeneratorCLI.csproj", "{C286CAFA-6B47-4ED9-9531-29F47090F17C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChickenAPI.Core", "src\ChickenAPI.Core\ChickenAPI.Core.csproj", "{0575F541-2458-4F49-BBD4-09A1786AC5ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{C286CAFA-6B47-4ED9-9531-29F47090F17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C286CAFA-6B47-4ED9-9531-29F47090F17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C286CAFA-6B47-4ED9-9531-29F47090F17C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0575F541-2458-4F49-BBD4-09A1786AC5ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0575F541-2458-4F49-BBD4-09A1786AC5ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0575F541-2458-4F49-BBD4-09A1786AC5ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0575F541-2458-4F49-BBD4-09A1786AC5ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

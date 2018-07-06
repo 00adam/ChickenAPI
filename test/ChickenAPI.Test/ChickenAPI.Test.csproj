@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ChickenAPI\ChickenAPI.csproj" />
+    <ProjectReference Include="..\..\src\ChickenAPI.Game\ChickenAPI.Game.csproj" />
   </ItemGroup>
 
 </Project>
