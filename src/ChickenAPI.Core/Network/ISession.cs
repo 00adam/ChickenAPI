@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Net;
-using ChickenAPI.Packets;
+using ChickenAPI.Core.Network.Packets;
 
-namespace ChickenAPI.Game.Network
+namespace ChickenAPI.Core.Network
 {
     public interface ISession
     {

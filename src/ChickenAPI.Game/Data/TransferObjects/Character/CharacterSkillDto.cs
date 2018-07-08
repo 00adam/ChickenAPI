@@ -1,5 +1,6 @@
 ﻿using System;
 using ChickenAPI.Core.DAL.AccessLayer.Repository;
+using ChickenAPI.Core.DAL.TransferObjects;
 
 namespace ChickenAPI.Data.TransferObjects.Character
 {

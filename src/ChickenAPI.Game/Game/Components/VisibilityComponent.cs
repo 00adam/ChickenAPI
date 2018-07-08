@@ -1,6 +1,6 @@
 ﻿using System;
-using ChickenAPI.ECS.Components;
-using ChickenAPI.ECS.Entities;
+using ChickenAPI.Core.ECS.Components;
+using ChickenAPI.Core.ECS.Entities;
 using ChickenAPI.Utils;
 
 namespace ChickenAPI.Game.Components

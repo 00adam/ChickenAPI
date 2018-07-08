@@ -1,10 +1,9 @@
 ﻿using System;
 using ChickenAPI.Core.DAL.TransferObjects;
-using ChickenAPI.ECS.Components;
-using ChickenAPI.ECS.Systems;
-using ChickenAPI.Enums.Game.Entity;
+using ChickenAPI.Core.ECS.Components;
+using ChickenAPI.Core.ECS.Systems;
 
-namespace ChickenAPI.ECS.Entities
+namespace ChickenAPI.Core.ECS.Entities
 {
     /// <inheritdoc cref="IDisposable" />
     /// <summary>

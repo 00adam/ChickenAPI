@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Linq;
-using ChickenAPI.Core.Network;
-using ChickenAPI.Enums;
-using ChickenAPI.Game.Network;
 
-namespace ChickenAPI.Packets
+namespace ChickenAPI.Core.Network.Packets
 {
     /// <summary>
     ///     Game Packets only

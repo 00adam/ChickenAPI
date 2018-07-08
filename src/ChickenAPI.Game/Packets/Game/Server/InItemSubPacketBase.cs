@@ -1,4 +1,6 @@
-﻿namespace ChickenAPI.Packets.Game.Server
+﻿using ChickenAPI.Core.Network.Packets;
+
+namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("in_item_subpacket")]
     public class InItemSubPacketBase : PacketBase

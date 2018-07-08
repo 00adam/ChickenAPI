@@ -1,4 +1,6 @@
-﻿namespace ChickenAPI.Packets.Game.Server.Inventory
+﻿using ChickenAPI.Core.Network.Packets;
+
+namespace ChickenAPI.Packets.Game.Server.Inventory
 {
     [PacketHeader("e_info")]
     public class EInfoPacket : PacketBase

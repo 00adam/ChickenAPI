@@ -1,5 +1,6 @@
 ﻿using System;
 using ChickenAPI.Core.DAL.AccessLayer.Repository;
+using ChickenAPI.Core.DAL.TransferObjects;
 using ChickenAPI.Enums.Game.Items;
 using ElementType = ChickenAPI.Enums.Game.Entity.ElementType;
 

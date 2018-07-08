@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ChickenAPI.ECS.Systems;
-using ChickenAPI.Packets;
-using ChickenAPI.Utils;
+using ChickenAPI.Core.ECS.Systems;
+using ChickenAPI.Core.IO;
+using ChickenAPI.Core.Network.Packets;
 
-namespace ChickenAPI.ECS.Entities
+namespace ChickenAPI.Core.ECS.Entities
 {
     public abstract class EntityManagerBase : IEntityManager
     {

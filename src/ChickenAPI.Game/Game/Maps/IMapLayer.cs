@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using ChickenAPI.Core.DAL.AccessLayer.Repository;
-using ChickenAPI.ECS.Entities;
+using ChickenAPI.Core.DAL.TransferObjects;
+using ChickenAPI.Core.ECS.Entities;
 using ChickenAPI.Utils;
 
 namespace ChickenAPI.Game.Maps

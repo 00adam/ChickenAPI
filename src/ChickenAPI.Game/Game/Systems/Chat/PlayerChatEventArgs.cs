@@ -1,4 +1,4 @@
-﻿using ChickenAPI.ECS.Systems;
+﻿using ChickenAPI.Core.ECS.Systems;
 using ChickenAPI.Game.Entities.Player;
 
 namespace ChickenAPI.Game.Systems.Chat

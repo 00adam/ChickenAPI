@@ -1,6 +1,6 @@
-﻿using ChickenAPI.Data.TransferObjects.Item;
-using ChickenAPI.ECS.Components;
-using ChickenAPI.ECS.Entities;
+﻿using ChickenAPI.Core.ECS.Components;
+using ChickenAPI.Core.ECS.Entities;
+using ChickenAPI.Data.TransferObjects.Item;
 using ChickenAPI.Enums.Game.Items;
 
 namespace ChickenAPI.Game.Components

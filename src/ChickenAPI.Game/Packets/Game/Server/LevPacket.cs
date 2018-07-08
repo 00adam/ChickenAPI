@@ -1,4 +1,6 @@
 ﻿using Autofac;
+using ChickenAPI.Core.IoC;
+using ChickenAPI.Core.Network.Packets;
 using ChickenAPI.Data.AccessLayer.Character;
 using ChickenAPI.Game.Components;
 using ChickenAPI.Game.Entities.Player;

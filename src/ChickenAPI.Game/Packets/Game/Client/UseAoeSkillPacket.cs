@@ -1,3 +1,5 @@
+using ChickenAPI.Core.Network.Packets;
+
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("u_as")]

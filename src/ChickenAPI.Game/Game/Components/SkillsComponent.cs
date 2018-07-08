@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
+using ChickenAPI.Core.ECS.Components;
+using ChickenAPI.Core.ECS.Entities;
 using ChickenAPI.Data.TransferObjects.Skills;
-using ChickenAPI.ECS.Components;
-using ChickenAPI.ECS.Entities;
 
 namespace ChickenAPI.Game.Components
 {

@@ -1,4 +1,4 @@
-﻿namespace ChickenAPI.Packets
+﻿namespace ChickenAPI.Core.Network.Packets
 {
     public abstract class PacketBase : IPacket
     {

@@ -1,5 +1,5 @@
-﻿using ChickenAPI.Data.TransferObjects.Item;
-using ChickenAPI.ECS.Systems;
+﻿using ChickenAPI.Core.ECS.Systems;
+using ChickenAPI.Data.TransferObjects.Item;
 
 namespace ChickenAPI.Game.Systems.Inventory.Args
 {

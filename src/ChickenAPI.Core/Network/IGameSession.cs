@@ -1,5 +1,4 @@
-﻿using ChickenAPI.ECS.Entities;
-using ChickenAPI.Game.Network;
+﻿using ChickenAPI.Core.ECS.Entities;
 
 namespace ChickenAPI.Core.Network
 {

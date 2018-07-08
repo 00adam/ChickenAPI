@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using ChickenAPI.ECS.Components;
-using ChickenAPI.ECS.Systems;
-using ChickenAPI.Enums.Game.Entity;
-using ChickenAPI.Utils;
+using ChickenAPI.Core.ECS.Components;
+using ChickenAPI.Core.ECS.Systems;
+using ChickenAPI.Core.IO;
 
-namespace ChickenAPI.ECS.Entities
+namespace ChickenAPI.Core.ECS.Entities
 {
     public abstract class EntityBase : IEntity
     {

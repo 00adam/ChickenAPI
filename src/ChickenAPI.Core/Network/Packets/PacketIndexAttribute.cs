@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ChickenAPI.Packets
+namespace ChickenAPI.Core.Network.Packets
 {
     public class PacketIndexAttribute : Attribute
     {

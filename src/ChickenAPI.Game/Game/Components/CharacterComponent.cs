@@ -1,6 +1,7 @@
-﻿using ChickenAPI.Data.TransferObjects.Character;
-using ChickenAPI.ECS.Components;
-using ChickenAPI.ECS.Entities;
+﻿using ChickenAPI.Core.ECS.Components;
+using ChickenAPI.Core.ECS.Entities;
+using ChickenAPI.Core.Network.Packets;
+using ChickenAPI.Data.TransferObjects.Character;
 using ChickenAPI.Enums;
 using ChickenAPI.Enums.Game.Character;
 using ChickenAPI.Game.Entities.Player;

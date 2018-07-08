@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using ChickenAPI.ECS.Systems;
-using ChickenAPI.Packets;
+using ChickenAPI.Core.ECS.Systems;
+using ChickenAPI.Core.Network.Packets;
 
-namespace ChickenAPI.ECS.Entities
+namespace ChickenAPI.Core.ECS.Entities
 {
     /// <inheritdoc cref="IBroadcastable" />
     /// <inheritdoc cref="IDisposable" />
     /// <summary>
-    ///     Contains entities and sub <see cref="T:ChickenAPI.ECS.Entities.IEntityManager" />
+    ///     Contains entities and sub <see cref="T:ChickenAPI.Core.ECS.Entities.IEntityManager" />
     /// </summary>
     public interface IEntityManager : IBroadcastable, IDisposable
     {

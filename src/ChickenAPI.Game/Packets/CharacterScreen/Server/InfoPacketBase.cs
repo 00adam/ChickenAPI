@@ -1,4 +1,6 @@
-﻿namespace ChickenAPI.Packets.CharacterScreen.Server
+﻿using ChickenAPI.Core.Network.Packets;
+
+namespace ChickenAPI.Packets.CharacterScreen.Server
 {
     [PacketHeader("info")]
     public class InfoPacketBase : PacketBase

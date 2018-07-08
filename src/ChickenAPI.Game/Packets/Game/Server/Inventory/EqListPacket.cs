@@ -1,4 +1,5 @@
-﻿using ChickenAPI.Enums.Game.Items;
+﻿using ChickenAPI.Core.Network.Packets;
+using ChickenAPI.Enums.Game.Items;
 using ChickenAPI.Game.Components;
 
 namespace ChickenAPI.Packets.Game.Server.Inventory

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using ChickenAPI.Core.Network.Packets;
 using ChickenAPI.Enums.Game.Items;
 
 namespace ChickenAPI.Packets.Game.Server

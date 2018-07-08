@@ -1,4 +1,5 @@
-﻿using ChickenAPI.Game.Components;
+﻿using ChickenAPI.Core.Network.Packets;
+using ChickenAPI.Game.Components;
 using ChickenAPI.Game.Entities.Player;
 
 namespace ChickenAPI.Packets.Game.Server

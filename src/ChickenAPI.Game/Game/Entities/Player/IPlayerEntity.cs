@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
-using ChickenAPI.ECS.Entities;
+using ChickenAPI.Core.ECS.Entities;
+using ChickenAPI.Core.Network;
+using ChickenAPI.Core.Network.Packets;
 using ChickenAPI.Game.Components;
-using ChickenAPI.Game.Network;
 using ChickenAPI.Packets;
 
 namespace ChickenAPI.Game.Entities.Player

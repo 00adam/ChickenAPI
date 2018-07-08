@@ -1,8 +1,6 @@
 ﻿using System;
-using ChickenAPI.Core.Network;
-using ChickenAPI.Game.Network;
 
-namespace ChickenAPI.Packets
+namespace ChickenAPI.Core.Network.Packets
 {
     public interface IPacketHandler
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using ChickenAPI.Core.ECS.Components;
+using ChickenAPI.Core.ECS.Entities;
 using ChickenAPI.Data.TransferObjects.Map;
-using ChickenAPI.ECS.Components;
-using ChickenAPI.ECS.Entities;
 using ChickenAPI.Enums.Game.Entity;
 using ChickenAPI.Game.Components;
 using ChickenAPI.Utils;

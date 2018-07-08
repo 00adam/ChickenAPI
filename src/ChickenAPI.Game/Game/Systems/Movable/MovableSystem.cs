@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
-using ChickenAPI.ECS.Entities;
-using ChickenAPI.ECS.Systems;
+using ChickenAPI.Core.ECS.Entities;
+using ChickenAPI.Core.ECS.Systems;
 using ChickenAPI.Game.Components;
 using ChickenAPI.Game.Entities.Player;
 using ChickenAPI.Packets.Game.Server;

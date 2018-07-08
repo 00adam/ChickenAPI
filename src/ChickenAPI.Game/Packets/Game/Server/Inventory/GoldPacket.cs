@@ -1,4 +1,5 @@
-﻿using ChickenAPI.Game.Entities.Player;
+﻿using ChickenAPI.Core.Network.Packets;
+using ChickenAPI.Game.Entities.Player;
 
 namespace ChickenAPI.Packets.Game.Server.Inventory
 {

@@ -1,4 +1,5 @@
 ﻿using ChickenAPI.Core.DAL.TransferObjects;
+using ChickenAPI.Core.Network.Packets;
 using ChickenAPI.Enums;
 
 namespace ChickenAPI.Data.TransferObjects.Character

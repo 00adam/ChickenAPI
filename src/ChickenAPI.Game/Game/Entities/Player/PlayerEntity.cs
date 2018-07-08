@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using ChickenAPI.Core.ECS.Components;
+using ChickenAPI.Core.ECS.Entities;
+using ChickenAPI.Core.Network;
+using ChickenAPI.Core.Network.Packets;
 using ChickenAPI.Data.TransferObjects.Character;
-using ChickenAPI.ECS.Components;
-using ChickenAPI.ECS.Entities;
 using ChickenAPI.Enums.Game.Entity;
 using ChickenAPI.Game.Components;
 using ChickenAPI.Game.Maps;
-using ChickenAPI.Game.Network;
 using ChickenAPI.Game.Systems.Visibility;
 using ChickenAPI.Packets;
 using ChickenAPI.Packets.Game.Client;

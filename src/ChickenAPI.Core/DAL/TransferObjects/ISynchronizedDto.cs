@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ChickenAPI.Core.DAL.AccessLayer.Repository
+namespace ChickenAPI.Core.DAL.TransferObjects
 {
     public interface ISynchronizedDto
     {

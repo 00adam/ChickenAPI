@@ -1,4 +1,5 @@
-﻿using ChickenAPI.ECS.Entities;
+﻿using ChickenAPI.Core.ECS.Entities;
+using ChickenAPI.Core.Network.Packets;
 using ChickenAPI.Enums.Game.Entity;
 using ChickenAPI.Enums.Game.Portals;
 using ChickenAPI.Game.Components;

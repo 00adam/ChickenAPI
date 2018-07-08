@@ -1,4 +1,6 @@
-﻿namespace ChickenAPI.Packets.CharacterScreen.Client
+﻿using ChickenAPI.Core.Network.Packets;
+
+namespace ChickenAPI.Packets.CharacterScreen.Client
 {
     [PacketHeader("game_start")]
     public class GameStartPacketBase : PacketBase

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using ChickenAPI.Core.DAL.AccessLayer.Repository;
+using ChickenAPI.Core.Network.Packets;
 using ChickenAPI.Data.TransferObjects.Character;
 using ChickenAPI.Data.TransferObjects.Item;
 using ChickenAPI.Enums;

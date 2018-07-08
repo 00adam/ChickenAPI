@@ -1,4 +1,4 @@
-﻿namespace ChickenAPI.Enums
+﻿namespace ChickenAPI.Core.Network.Packets
 {
     /// <summary>
     ///     Account basic groups

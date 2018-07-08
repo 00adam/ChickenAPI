@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using ChickenAPI.ECS.Components;
-using ChickenAPI.ECS.Entities;
+using ChickenAPI.Core.ECS.Components;
+using ChickenAPI.Core.ECS.Entities;
 using ChickenAPI.Enums.Game.Entity;
 using ChickenAPI.Utils;
 

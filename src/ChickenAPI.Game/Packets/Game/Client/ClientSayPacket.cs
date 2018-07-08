@@ -1,4 +1,6 @@
-﻿namespace ChickenAPI.Packets.Game.Client
+﻿using ChickenAPI.Core.Network.Packets;
+
+namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("say")]
     public class ClientSayPacket : PacketBase

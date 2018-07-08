@@ -1,4 +1,5 @@
-﻿using ChickenAPI.Enums.Packets;
+﻿using ChickenAPI.Core.Network.Packets;
+using ChickenAPI.Enums.Packets;
 
 namespace ChickenAPI.Packets.Game.Client
 {

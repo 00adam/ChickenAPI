@@ -1,4 +1,6 @@
-﻿namespace ChickenAPI.Packets.Game.Server
+﻿using ChickenAPI.Core.Network.Packets;
+
+namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("bn")]
     public class BnPacket : PacketBase

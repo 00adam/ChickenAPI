@@ -1,4 +1,6 @@
-﻿namespace ChickenAPI.Packets.CharacterScreen.Client
+﻿using ChickenAPI.Core.Network.Packets;
+
+namespace ChickenAPI.Packets.CharacterScreen.Client
 {
     [PacketHeader("EntryPoint", 3, false)]
     public class EntryPointPacketBase : PacketBase
