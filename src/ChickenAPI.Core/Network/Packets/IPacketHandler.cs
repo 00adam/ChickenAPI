@@ -1,31 +1,19 @@
 ﻿using System;
+using ChickenAPI.Core.Network.Handling;
 
 namespace ChickenAPI.Core.Network.Packets
 {
-    public interface IPacketHandler
+    public interface IPacketHandlerContainer
     {
-        void Register(CharacterScreenPacketHandler method);
-        void Register(GamePacketHandler method);
+        void Register(IPacketHandler handler);
 
-        void UnregisterCharacterScreenHandler(Type packetType);
-        void UnregisterCharacterScreenHandler(string header);
-
-        void UnregisterGameHandler(Type packetType);
-        void UnregisterGameHandler(string header);
-
-        CharacterScreenPacketHandler GetCharacterScreenPacketHandler(string header);
-        GamePacketHandler GetGamePacketHandler(string header);
+        void Unregister(Type packetType);
+        void Unregsiter(string header);
 
         /// <summary>
         ///     Handle the CharacterScreen packet
         /// </summary>
         /// <param name="handlingInfo"></param>
         void Handle((IPacket, ISession) handlingInfo);
-
-        /// <summary>
-        ///     Handle the Game packet
-        /// </summary>
-        /// <param name="handlingInfo"></param>
-        void Handle((IPacket, IGameSession) handlingInfo);
     }
 }

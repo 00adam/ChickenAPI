@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ChickenAPI.Core.ECS.Systems;
 using ChickenAPI.Core.IO;
+using ChickenAPI.Core.Network;
 using ChickenAPI.Core.Network.Packets;
 
 namespace ChickenAPI.Core.ECS.Entities
@@ -128,10 +129,6 @@ namespace ChickenAPI.Core.ECS.Entities
                 Log.Error("[NOTIFY_SYSTEM]", exception);
                 Console.WriteLine(exception);
             }
-        }
-
-        public void Broadcast<T>(T packet) where T : IPacket
-        {
         }
     }
 }

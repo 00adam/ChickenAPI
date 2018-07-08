@@ -8,18 +8,7 @@ namespace ChickenAPI.Core.Network
     {
         int SessionId { get; }
 
-        long CharacterId { get; }
-
-        bool IsAuthenticated { get; }
-
         IPEndPoint Ip { get; }
-
-        //AccountDto Account { get; }
-        //IPlayerEntity Player { get; }
-
-        //void InitializeAccount(AccountDto dto);
-        void InitializeCharacterId(long id);
-        //void InitializeEntity(IPlayerEntity ett);
 
         void SendPacket<T>(T packet) where T : IPacket;
 

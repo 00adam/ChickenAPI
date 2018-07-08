@@ -10,7 +10,7 @@ namespace ChickenAPI.Core.ECS.Entities
     /// <summary>
     ///     Contains entities and sub <see cref="T:ChickenAPI.Core.ECS.Entities.IEntityManager" />
     /// </summary>
-    public interface IEntityManager : IBroadcastable, IDisposable
+    public interface IEntityManager : IDisposable
     {
         #region EntityManager
 
