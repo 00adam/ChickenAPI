@@ -4,7 +4,7 @@ using ChickenAPI.Enums.Game.Items;
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("mvi")]
-    public class MviPacket : Packet<>
+    public class MviPacket : Packet<MviPacket>
     {
         [PacketIndex(0)]
         public InventoryType InventoryType { get; set; }

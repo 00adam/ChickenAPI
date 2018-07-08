@@ -5,7 +5,7 @@ using ChickenAPI.Enums.Game.Entity;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("u_i")]
-    public class UiPacket : Packet<>
+    public class UiPacket : Packet<UiPacket>
     {
         [PacketIndex(0)]
         public VisualType VisualType { get; set; }

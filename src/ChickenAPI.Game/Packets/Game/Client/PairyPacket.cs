@@ -4,7 +4,7 @@ using ChickenAPI.Enums.Game.Items;
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("pairy")]
-    public class PairyPacket : Packet<>
+    public class PairyPacket : Packet<PairyPacket>
     {
         [PacketIndex(0)]
         public byte VisualType { get; set; }

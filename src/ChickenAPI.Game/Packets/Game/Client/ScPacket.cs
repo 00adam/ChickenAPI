@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("sc")]
-    public class ScPacket : Packet<>
+    public class ScPacket : Packet<ScPacket>
     {
         [PacketIndex(0)]
         public byte Type { get; set; }

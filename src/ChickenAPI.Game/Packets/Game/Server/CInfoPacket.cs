@@ -7,7 +7,7 @@ using ChickenAPI.Game.Entities.Player;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("c_info")]
-    public class CInfoPacket : Packet<>
+    public class CInfoPacket : Packet<CInfoPacket>
     {
         public CInfoPacket(IPlayerEntity entity)
         {

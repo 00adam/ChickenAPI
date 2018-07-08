@@ -7,7 +7,7 @@ using ChickenAPI.Game.Components;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("st")]
-    public class StPacket : Packet<>
+    public class StPacket : Packet<StPacket>
     {
         public StPacket(IEntity entity)
         {

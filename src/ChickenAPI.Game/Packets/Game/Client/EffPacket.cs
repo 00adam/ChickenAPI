@@ -4,7 +4,7 @@ using ChickenAPI.Enums.Packets;
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("eff")]
-    public class EffectPacket : Packet<>
+    public class EffectPacket : Packet<EffectPacket>
     {
         [PacketIndex(0)]
         public EffectType EffectType { get; set; }

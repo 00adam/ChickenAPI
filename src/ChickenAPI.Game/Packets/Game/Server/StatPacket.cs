@@ -5,7 +5,7 @@ using ChickenAPI.Game.Entities.Player;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("stat")]
-    public class StatPacket : Packet<>
+    public class StatPacket : Packet<StatPacket>
     {
         public StatPacket(IPlayerEntity player)
         {

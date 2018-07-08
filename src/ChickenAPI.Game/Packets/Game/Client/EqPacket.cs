@@ -8,7 +8,7 @@ using ChickenAPI.Packets.Game.Server.Inventory;
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("eq")]
-    public class EqPacket : Packet<>
+    public class EqPacket : Packet<EqPacket>
     {
         public EqPacket(IPlayerEntity entity)
         {

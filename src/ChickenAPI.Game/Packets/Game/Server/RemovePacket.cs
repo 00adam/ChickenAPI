@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("remove")]
-    public class RemovePacket : Packet<>
+    public class RemovePacket : Packet<RemovePacket>
     {
         [PacketIndex(0)]
         public byte EquipSlot { get; set; }

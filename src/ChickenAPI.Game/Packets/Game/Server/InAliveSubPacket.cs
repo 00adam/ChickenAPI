@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("in_alive_subpacket")]
-    public class InAliveSubPacket : Packet<>
+    public class InAliveSubPacket : Packet<InAliveSubPacket>
     {
         #region Properties
         [PacketIndex(0)]

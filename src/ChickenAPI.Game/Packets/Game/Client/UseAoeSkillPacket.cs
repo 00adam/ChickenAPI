@@ -3,7 +3,7 @@ using ChickenAPI.Core.Network.Packets;
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("u_as")]
-    public class UseAoeSkillPacket : Packet<>
+    public class UseAoeSkillPacket : Packet<UseAoeSkillPacket>
     {
         [PacketIndex(0)]
         public long CastId { get; set; }

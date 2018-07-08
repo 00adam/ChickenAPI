@@ -6,7 +6,7 @@ using ChickenAPI.Game.Entities.Player;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("cond")]
-    public class CondPacket : Packet<>
+    public class CondPacket : Packet<CondPacket>
     {
         public CondPacket(IPlayerEntity entity)
         {

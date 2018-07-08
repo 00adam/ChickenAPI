@@ -4,7 +4,7 @@ using ChickenAPI.Enums.Game.Entity;
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("u_s")]
-    public class UseSkillPacket : Packet<>
+    public class UseSkillPacket : Packet<UseSkillPacket>
     {
         [PacketIndex(0)]
         public long CastId { get; set; }

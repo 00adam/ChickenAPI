@@ -5,7 +5,7 @@ using ChickenAPI.Game.Maps;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("c_map")]
-    public class CMapPacket : Packet<>
+    public class CMapPacket : Packet<CMapPacket>
     {
         public CMapPacket(IMap map)
         {

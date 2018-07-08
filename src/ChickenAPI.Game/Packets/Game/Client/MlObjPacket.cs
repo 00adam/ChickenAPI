@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("mlobj")]
-    public class MlobjPacket : Packet<>
+    public class MlobjPacket : Packet<MlobjPacket>
     {
         [PacketIndex(0)]
         public bool Deleted { get; set; }

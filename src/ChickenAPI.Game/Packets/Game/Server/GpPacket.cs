@@ -10,7 +10,7 @@ namespace ChickenAPI.Packets.Game.Server
     /// gp {SourceX} {SourceY} {ServerManager.Instance.GetMapInstance(DestinationMapInstanceId)?.Map.MapId ?? 0} {Type} {PortalId} {(IsDisabled ? 1 : 0)}
     /// </summary>
     [PacketHeader("gp")]
-    public class GpPacket : Packet<>
+    public class GpPacket : Packet<GpPacket>
     {
         public GpPacket(IEntity entity)
         {

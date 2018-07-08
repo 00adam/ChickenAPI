@@ -5,7 +5,7 @@ using ChickenAPI.Enums.Game.Character;
 namespace ChickenAPI.Packets.CharacterScreen.Client
 {
     [PacketHeader("Char_NEW", false)]
-    public class CharNewPacket : Packet<>
+    public class CharNewPacket : Packet<CharNewPacket>
     {
         [PacketIndex(0)]
         public string Name { get; set; }

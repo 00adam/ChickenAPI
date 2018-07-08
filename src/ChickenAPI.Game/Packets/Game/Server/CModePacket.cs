@@ -6,7 +6,7 @@ using ChickenAPI.Game.Entities.Player;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("c_mode")]
-    public class CModePacket : Packet<>
+    public class CModePacket : Packet<CModePacket>
     {
         public CModePacket(IPlayerEntity entity)
         {

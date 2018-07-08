@@ -6,7 +6,7 @@ using ChickenAPI.Game.Maps;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("at")]
-    public class AtPacket : Packet<>
+    public class AtPacket : Packet<AtPacket>
     {
         public AtPacket(IPlayerEntity entity)
         {

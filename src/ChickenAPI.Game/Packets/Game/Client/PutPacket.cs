@@ -4,7 +4,7 @@ using ChickenAPI.Enums.Game.Items;
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("put")]
-    public class PutPacket : Packet<>
+    public class PutPacket : Packet<PutPacket>
     {
         [PacketIndex(0)]
         public InventoryType InventoryType { get; set; }
