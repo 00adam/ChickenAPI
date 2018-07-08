@@ -5,7 +5,7 @@ using ChickenAPI.Game.Entities.Player;
 namespace ChickenAPI.Packets.Game.Server.Inventory
 {
     [PacketHeader("equip")]
-    public class EquipmentPacket : PacketBase
+    public class EquipmentPacket : Packet<EquipmentPacket>
     {
         public EquipmentPacket(IPlayerEntity playerEntity)
         {

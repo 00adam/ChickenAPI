@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("in_monster_subpacket")]
-    public class InMonsterSubPacket : PacketBase
+    public class InMonsterSubPacket : Packet<InMonsterSubPacket>
     {
         [PacketIndex(0)]
         public byte HpPercentage { get; set; }

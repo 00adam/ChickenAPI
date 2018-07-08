@@ -5,7 +5,7 @@ using ChickenAPI.Enums.Game.Items;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("ivn")]
-    public class IvnPacket : PacketBase
+    public class IvnPacket : Packet<IvnPacket>
     {
         [PacketIndex(0)]
         public InventoryType InventoryType { get; set; }

@@ -5,7 +5,7 @@ namespace ChickenAPI.Packets.Game.Client
 {
 
     [PacketHeader("dir")]
-    public class DirectionPacket : PacketBase
+    public class DirectionPacket : Packet<DirectionPacket>
     {
         #region Properties
 

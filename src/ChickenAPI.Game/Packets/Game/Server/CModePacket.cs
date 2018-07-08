@@ -6,9 +6,9 @@ using ChickenAPI.Game.Entities.Player;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("c_mode")]
-    public class CModePacketBase : PacketBase
+    public class CModePacket : Packet<>
     {
-        public CModePacketBase(IPlayerEntity entity)
+        public CModePacket(IPlayerEntity entity)
         {
             var character = entity.GetComponent<CharacterComponent>();
 

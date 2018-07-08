@@ -12,7 +12,7 @@ namespace ChickenAPI.Packets.Game.Server
     /// $"lev {Level} {LevelXp} {(UseSp? SpInstance.SpLevel : JobLevel)} {(UseSp ? SpInstance.XP : JobLevelXp)} {XpLoad()} {(UseSp ? SpxpLoad() : JobXpLoad())} {Reput} {GetCp()} {HeroXp} {HeroLevel} {HeroXpLoad()}";
     /// </summary>
     [PacketHeader("lev")]
-    public class LevPacket :PacketBase
+    public class LevPacket :Packet<>
     {
         public LevPacket(IPlayerEntity player)
         {

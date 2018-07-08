@@ -2,15 +2,15 @@
 
 namespace ChickenAPI.Packets.Game.Server
 {
-    [PacketHeader("in_alive_subpacket")]
-    public class InAliveSubPacketBase : PacketBase
+    [PacketHeader("in_item_subpacket")]
+    public class InItemSubPacket : Packet<InItemSubPacket>
     {
         #region Properties
         [PacketIndex(0)]
-        public byte HpPercentage { get; set; }
+        public int Amount { get; set; }
 
         [PacketIndex(1)]
-        public byte MpPercentage { get; set; }
+        public bool IsQuestRelative { get; set; }
 
         #endregion
     }

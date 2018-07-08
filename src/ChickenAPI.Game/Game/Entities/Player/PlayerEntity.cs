@@ -8,6 +8,7 @@ using ChickenAPI.Data.TransferObjects.Character;
 using ChickenAPI.Enums.Game.Entity;
 using ChickenAPI.Game.Components;
 using ChickenAPI.Game.Maps;
+using ChickenAPI.Game.Packets.Game.Server;
 using ChickenAPI.Game.Systems.Visibility;
 using ChickenAPI.Packets;
 using ChickenAPI.Packets.Game.Client;
@@ -91,18 +92,18 @@ namespace ChickenAPI.Game.Entities.Player
                 return;
             }
 
-            SendPacket(new CInfoPacketBase(this));
-            SendPacket(new CModePacketBase(this));
+            SendPacket(new CInfoPacket(this));
+            SendPacket(new CModePacket(this));
             SendPacket(new EqPacket(this));
             SendPacket(new EquipmentPacket(this));
             SendPacket(new LevPacket(this));
             SendPacket(new StatPacket(this));
             SendPacket(new StPacket(this));
-            SendPacket(new AtPacketBase(this));
-            SendPacket(new CondPacketBase(this));
-            SendPacket(new CMapPacketBase(map.Map));
+            SendPacket(new AtPacket(this));
+            SendPacket(new CondPacket(this));
+            SendPacket(new CMapPacket(map.Map));
             // StatChar()
-            SendPacket(new InPacketBase(this));
+            SendPacket(new InPacket(this));
             // Pairy()
             // Pst()
             // Act6() : Act()
@@ -117,7 +118,7 @@ namespace ChickenAPI.Game.Entities.Player
             // MapItems()
             // Gp()
             SendPacket(new RsfpPacket()); // Minimap Position
-            SendPacket(new CondPacketBase(this));
+            SendPacket(new CondPacket(this));
             EntityManager.NotifySystem<VisibilitySystem>(this, new VisibilitySetVisibleEventArgs
             {
                 Broadcast = true,

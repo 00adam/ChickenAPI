@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.CharacterScreen.Server
 {
     [PacketHeader("clist_start")]
-    public class ClistStartPacketBase : PacketBase
+    public class ClistStartPacket : Packet<ClistStartPacket>
     {
         #region Properties
 

@@ -3,7 +3,8 @@
 namespace ChickenAPI.Packets.CharacterScreen.Server
 {
     [PacketHeader("OK")]
-    public class OkPacketBase : PacketBase
+    public class OkPacket : Packet<OkPacket>
     {
+        // packet has no content
     }
 }

@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.CharacterScreen.Client
 {
     [PacketHeader("EntryPoint", 3, false)]
-    public class EntryPointPacketBase : PacketBase
+    public class EntryPointPacket : Packet<EntryPointPacket>
     {
         #region Properties
 

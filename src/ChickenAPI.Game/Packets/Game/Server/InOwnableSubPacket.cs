@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("in_ownable_subpacket")]
-    public class InOwnableSubPacketBase : PacketBase
+    public class InOwnableSubPacket : Packet<InOwnableSubPacket>
     {
         #region Properties
         [PacketIndex(0)]

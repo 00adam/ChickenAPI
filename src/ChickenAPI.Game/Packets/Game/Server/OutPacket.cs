@@ -6,9 +6,9 @@ using ChickenAPI.Game.Entities.Player;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("out")]
-    public class OutPacketBase : PacketBase
+    public class OutPacket : Packet<OutPacket>
     {
-        public OutPacketBase(IPlayerEntity entity)
+        public OutPacket(IPlayerEntity entity)
         {
             Type = VisualType.Character;
             EntityId = entity.GetComponent<CharacterComponent>().Id;

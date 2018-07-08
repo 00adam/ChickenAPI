@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("eqinfo")]
-    public class EquipmentInfoPacket : PacketBase
+    public class EquipmentInfoPacket : Packet<>
     {
         #region Properties
 

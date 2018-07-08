@@ -4,7 +4,7 @@ using ChickenAPI.Game.Entities.Player;
 namespace ChickenAPI.Packets.Game.Server.Inventory
 {
     [PacketHeader("gold")]
-    public class GoldPacket : PacketBase
+    public class GoldPacket : Packet<GoldPacket>
     {
         public GoldPacket(IPlayerEntity entity)
         {

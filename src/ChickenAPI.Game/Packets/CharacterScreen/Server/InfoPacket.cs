@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.CharacterScreen.Server
 {
     [PacketHeader("info")]
-    public class InfoPacketBase : PacketBase
+    public class InfoPacket : Packet<>
     {
         [PacketIndex(0)]
         public string Message { get; set; }

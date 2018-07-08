@@ -4,7 +4,7 @@ using ChickenAPI.Enums.Game.Character;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("in_character_subpacket")]
-    public class InCharacterSubPacketBase : PacketBase
+    public class InCharacterSubPacket : Packet<InCharacterSubPacket>
     {
         #region Properties
         [PacketIndex(0)]

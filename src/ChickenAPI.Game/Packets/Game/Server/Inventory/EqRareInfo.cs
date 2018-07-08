@@ -1,11 +1,12 @@
 ﻿using ChickenAPI.Core.Network.Packets;
+using ChickenAPI.Core.Network.Packets.Attributes;
 using ChickenAPI.Enums.Game.Items;
 using ChickenAPI.Game.Components;
 
 namespace ChickenAPI.Packets.Game.Server.Inventory
 {
-    [PacketHeader("subpacket_eq_rare_info")]
-    public class EqRareInfo : PacketBase
+    [PacketNested]
+    public class EqRareInfo : Packet<EqRareInfo>
     {
 
         public EqRareInfo(InventoryComponent inventory)

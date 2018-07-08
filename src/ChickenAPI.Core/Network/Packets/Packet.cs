@@ -2,12 +2,12 @@
 
 namespace ChickenAPI.Core.Network.Packets
 {
-    public abstract class PacketBase : IPacket
+    public abstract class Packet<T> : IPacket
     {
         #region Properties
 
         public string Header { get; set; }
-        public Type Type { get; protected set; }
+        public Type PacketType => typeof(T);
 
         /// <summary>
         /// </summary>

@@ -1,13 +1,13 @@
 ﻿using System;
 using ChickenAPI.Core.ECS.Entities;
 using ChickenAPI.Core.Network.Packets;
-using ChickenAPI.Enums;
 using ChickenAPI.Enums.Game.Character;
 using ChickenAPI.Enums.Game.Entity;
 using ChickenAPI.Game.Components;
 using ChickenAPI.Game.Entities.Player;
+using ChickenAPI.Packets.Game.Server;
 
-namespace ChickenAPI.Packets.Game.Server
+namespace ChickenAPI.Game.Packets.Game.Server
 {
     /*
         $"in 
@@ -50,9 +50,9 @@ namespace ChickenAPI.Packets.Game.Server
         {HeroLevel}";
     */
     [PacketHeader("in")]
-    public class InPacketBase : PacketBase
+    public class InPacket : Packet<InPacket>
     {
-        public InPacketBase(IEntity entity)
+        public InPacket(IEntity entity)
         {
             switch (entity.Type)
             {
@@ -134,7 +134,7 @@ namespace ChickenAPI.Packets.Game.Server
             PositionX = movable.Actual.X;
             PositionY = movable.Actual.Y;
             DirectionType = movable.DirectionType;
-            InCharacterSubPacket = new InCharacterSubPacketBase
+            InCharacterSubPacket = new InCharacterSubPacket
             {
                 Authority = /*entity.Session.Account.Authority > AuthorityType.GameMaster */ (byte)2,
                 Gender = character.Gender,
@@ -236,7 +236,7 @@ namespace ChickenAPI.Packets.Game.Server
         public InMonsterSubPacket InMonsterSubPacket { get; set; }
 
         [PacketIndex(9, IsOptional = true, RemoveSeparator = true)]
-        public InCharacterSubPacketBase InCharacterSubPacket { get; set; }
+        public InCharacterSubPacket InCharacterSubPacket { get; set; }
 
         [PacketIndex(10, IsOptional = true, RemoveSeparator = true)]
         public InNpcSubPacket InNpcSubPacket { get; set; }

@@ -6,6 +6,7 @@ using ChickenAPI.Core.IO;
 using ChickenAPI.Enums.Game.Entity;
 using ChickenAPI.Game.Components;
 using ChickenAPI.Game.Entities.Player;
+using ChickenAPI.Game.Packets.Game.Server;
 using ChickenAPI.Packets.Game.Server;
 using ChickenAPI.Utils;
 
@@ -52,7 +53,7 @@ namespace ChickenAPI.Game.Systems.Visibility
                 return;
             }
 
-            var inEntity = new InPacketBase(entity);
+            var inEntity = new InPacket(entity);
 
             foreach (IEntity entityy in entity.EntityManager.Entities)
             {
@@ -88,7 +89,7 @@ namespace ChickenAPI.Game.Systems.Visibility
                     case EntityType.Mate:
                     case EntityType.Npc:
                     case EntityType.Player:
-                        var inpacket = new InPacketBase(entityy);
+                        var inpacket = new InPacket(entityy);
                         session.SendPacket(inpacket);
                         if (entityy is IPlayerEntity player)
                         {
@@ -121,7 +122,7 @@ namespace ChickenAPI.Game.Systems.Visibility
 
                 if (entityy is IPlayerEntity player)
                 {
-                    player.SendPacket(new OutPacketBase(player));
+                    player.SendPacket(new OutPacket(player));
                 }
             }
         }

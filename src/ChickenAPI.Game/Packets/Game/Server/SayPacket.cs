@@ -5,7 +5,7 @@ using ChickenAPI.Enums.Packets;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("say")]
-    public class SayPacket : PacketBase
+    public class SayPacket : Packet<>
     {
         #region Properties
 

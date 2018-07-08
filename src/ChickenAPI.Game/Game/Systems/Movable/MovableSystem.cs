@@ -49,7 +49,7 @@ namespace ChickenAPI.Game.Systems.Movable
             }
             if (entity is IPlayerEntity playerEntity)
             {
-                playerEntity.SendPacket(new CondPacketBase(playerEntity));
+                playerEntity.SendPacket(new CondPacket(playerEntity));
             }
         }
     }

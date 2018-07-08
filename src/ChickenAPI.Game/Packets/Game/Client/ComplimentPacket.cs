@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("compl")]
-    public class ComplimentPacket : PacketBase
+    public class ComplimentPacket : Packet<ComplimentPacket>
     {
         #region Properties
 

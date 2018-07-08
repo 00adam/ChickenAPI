@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Server.Group
 {
     [PacketHeader("pinit")]
-    public class PInitPacket : PacketBase
+    public class PInitPacket : Packet<>
     {
         public PInitPacket()
         {

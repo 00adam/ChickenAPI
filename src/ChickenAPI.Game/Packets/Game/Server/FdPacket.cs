@@ -4,7 +4,7 @@ namespace ChickenAPI.Packets.Game.Server
 {
 
     [PacketHeader("fd")]
-    public class FdPacket : PacketBase
+    public class FdPacket : Packet<>
     {
         #region Properties
         [PacketIndex(0)]

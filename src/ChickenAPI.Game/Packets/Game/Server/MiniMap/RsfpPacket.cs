@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Server.MiniMap
 {
     [PacketHeader("rsfp")]
-    public class RsfpPacket : PacketBase
+    public class RsfpPacket : Packet<>
     {
         [PacketIndex(0)]
         public long MapX { get; set; } = 0;

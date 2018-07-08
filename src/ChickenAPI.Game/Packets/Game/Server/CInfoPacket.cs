@@ -7,9 +7,9 @@ using ChickenAPI.Game.Entities.Player;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("c_info")]
-    public class CInfoPacketBase : PacketBase
+    public class CInfoPacket : Packet<>
     {
-        public CInfoPacketBase(IPlayerEntity entity)
+        public CInfoPacket(IPlayerEntity entity)
         {
             var character = entity.GetComponent<CharacterComponent>();
             var family = entity.GetComponent<FamilyComponent>();

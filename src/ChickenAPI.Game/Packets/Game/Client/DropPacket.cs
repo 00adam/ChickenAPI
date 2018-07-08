@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("drop")]
-    class DropPacket : PacketBase
+    class DropPacket : Packet<>
     {
         [PacketIndex(0)]
         public long ItemVNum { get; set; }

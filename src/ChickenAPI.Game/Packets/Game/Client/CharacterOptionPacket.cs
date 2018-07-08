@@ -4,7 +4,7 @@ using ChickenAPI.Enums.Game.Character;
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("gop")]
-    public class CharacterOptionPacket : PacketBase
+    public class CharacterOptionPacket : Packet<CharacterOptionPacket>
     {
         [PacketIndex(0)]
         public CharacterOption Option { get; set; }

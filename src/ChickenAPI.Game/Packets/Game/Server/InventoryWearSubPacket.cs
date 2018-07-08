@@ -1,11 +1,12 @@
 ﻿using ChickenAPI.Core.Network.Packets;
+using ChickenAPI.Core.Network.Packets.Attributes;
 using ChickenAPI.Enums.Game.Items;
 using ChickenAPI.Game.Components;
 
 namespace ChickenAPI.Packets.Game.Server
 {
-    [PacketHeader("eq_subpacket")]
-    public class InventoryWearSubPacket : PacketBase
+    [PacketNested]
+    public class InventoryWearSubPacket : Packet<InventoryWearSubPacket>
     {
         public InventoryWearSubPacket(InventoryComponent inventory)
         {

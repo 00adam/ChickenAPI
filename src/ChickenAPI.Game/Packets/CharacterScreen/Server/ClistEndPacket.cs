@@ -3,8 +3,8 @@
 namespace ChickenAPI.Packets.CharacterScreen.Server
 {
     [PacketHeader("clist_end")]
-    public class ClistEndPacketBase : PacketBase
+    public class ClistEndPacket : Packet<ClistEndPacket>
     {
-        // Useless packet
+        // not filled by any data
     }
 }

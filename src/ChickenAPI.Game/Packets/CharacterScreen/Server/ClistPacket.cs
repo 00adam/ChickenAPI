@@ -2,10 +2,10 @@
 using ChickenAPI.Core.Network.Packets;
 using ChickenAPI.Enums.Game.Character;
 
-namespace ChickenAPI.Packets.CharacterScreen.Server
+namespace ChickenAPI.Game.Packets.CharacterScreen.Server
 {
     [PacketHeader("clist")]
-    public class ClistPacketBase : PacketBase
+    public class ClistPacket : Packet<ClistPacket>
     {
         #region Properties
 

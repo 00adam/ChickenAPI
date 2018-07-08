@@ -5,7 +5,7 @@ namespace ChickenAPI.Packets.Game.Client
 {
 
     [PacketHeader("ncif")]
-    public class NcifPacket : PacketBase
+    public class NcifPacket : Packet<>
     {
         #region Properties
 

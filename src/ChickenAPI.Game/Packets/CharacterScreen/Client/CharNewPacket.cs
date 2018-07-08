@@ -1,10 +1,11 @@
-﻿using ChickenAPI.Core.Network.Packets;
+﻿using System;
+using ChickenAPI.Core.Network.Packets;
 using ChickenAPI.Enums.Game.Character;
 
 namespace ChickenAPI.Packets.CharacterScreen.Client
 {
     [PacketHeader("Char_NEW", false)]
-    public class CharNewPacketBase : PacketBase
+    public class CharNewPacket : Packet<>
     {
         [PacketIndex(0)]
         public string Name { get; set; }

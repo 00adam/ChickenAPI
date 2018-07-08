@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("walk")]
-    public class WalkPacket : PacketBase
+    public class WalkPacket : Packet<>
     {
         #region Properties
 

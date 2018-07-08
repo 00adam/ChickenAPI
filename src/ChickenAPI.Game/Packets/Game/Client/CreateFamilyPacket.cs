@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("glmk")]
-    public class CreateFamilyPacket : PacketBase
+    public class CreateFamilyPacket : Packet<CreateFamilyPacket>
     {
         #region Properties
 

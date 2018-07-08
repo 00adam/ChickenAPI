@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("in_non_player_subpacket")]
-    public class InNonPlayerSubPacketBase : PacketBase
+    public class InNonPlayerSubPacket : Packet<InNonPlayerSubPacket>
     {
         #region Properties
         [PacketIndex(0)]

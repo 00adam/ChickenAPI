@@ -9,7 +9,7 @@ using ChickenAPI.Game.Entities.Player;
 namespace ChickenAPI.Packets.Game.Server
 {
     [PacketHeader("mv")]
-    public class MvPacket : PacketBase
+    public class MvPacket : Packet<>
     {
         public MvPacket(IPlayerEntity entity)
         {

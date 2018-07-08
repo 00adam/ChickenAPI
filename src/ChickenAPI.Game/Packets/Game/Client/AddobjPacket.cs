@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.Game.Client
 {
     [PacketHeader("addobj")]
-    public class AddobjPacket : PacketBase
+    public class AddobjPacket : Packet<AddobjPacket>
     {
         [PacketIndex(0)]
         public short Slot { get; set; }

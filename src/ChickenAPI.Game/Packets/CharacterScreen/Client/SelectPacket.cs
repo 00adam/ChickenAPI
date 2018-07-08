@@ -3,7 +3,7 @@
 namespace ChickenAPI.Packets.CharacterScreen.Client
 {
     [PacketHeader("select", NeedCharacter = false)]
-    public class SelectPacketBase : PacketBase
+    public class SelectPacket : Packet<SelectPacket>
     {
         [PacketIndex(0)]
         public byte Slot { get; set; }

@@ -5,7 +5,7 @@ namespace ChickenAPI.Packets.Game.Server.Inventory
 {
 
     [PacketHeader("eqinfo")]
-    public class EquipmentInfoPacket : PacketBase
+    public class EquipmentInfoPacket : Packet<EquipmentInfoPacket>
     {
         #region Properties
 

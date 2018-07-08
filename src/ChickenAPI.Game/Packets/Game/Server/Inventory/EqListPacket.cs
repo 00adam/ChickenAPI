@@ -1,11 +1,12 @@
 ﻿using ChickenAPI.Core.Network.Packets;
+using ChickenAPI.Core.Network.Packets.Attributes;
 using ChickenAPI.Enums.Game.Items;
 using ChickenAPI.Game.Components;
 
 namespace ChickenAPI.Packets.Game.Server.Inventory
 {
-    [PacketHeader("subpacket_eq_list_info")]
-    public class EqListInfo : PacketBase
+    [PacketNested]
+    public class EqListInfo : Packet<EqListInfo>
     {
         public EqListInfo(InventoryComponent inventory)
         {
